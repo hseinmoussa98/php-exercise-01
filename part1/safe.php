@@ -11,6 +11,9 @@ session_start();
 </head>
 <body>
 <?php 
+if (!isset($_SESSION["user"]))
+  header("Location: home.php");
+  
   echo"
   <div style='text-align:center;'>
       <h1> Welcome To The Safe Page  </h1>
