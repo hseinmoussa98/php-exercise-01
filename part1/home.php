@@ -94,7 +94,7 @@ if(isset($_POST["sub2"]) && $_SERVER["REQUEST_METHOD"] == "POST" )
                 } 
          
                 else
-                {
+                {   
                     header("Location:safe.php");
                 }
             }
