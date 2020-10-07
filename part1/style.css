@@ -1,0 +1,111 @@
+*
+{
+    box-sizing: border-box;
+  
+}
+body{
+    background-color: #2a85b1;
+    background-image: linear-gradient( #2a85b1, #c327af);
+}
+h1{
+    font-size: 250%;
+}
+h1,h2,h3,p,input[type=submit],button{
+    color: wheat;
+}
+
+input[type=submit],button
+{
+    background-color:#18b9e7;
+}
+
+.login-signup
+{
+    display: grid;
+}
+
+.container{
+    margin:5%;
+}
+.login-signup
+{
+    display:grid;
+    grid-template-columns: 40% 10% 40%;
+}
+
+.login
+{	
+    background: rgba(0, 0, 0, 0.7);
+    
+position: relative;
+padding: 5%;
+display :grid;
+height: 85%;
+box-shadow:0 0 20px 20px rgba(0, 0, 0, 0.5) ;
+
+
+}
+
+
+.signup
+{   background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    padding: 5%;
+    box-shadow:0 0 20px 20px rgba(0, 0, 0, 0.5) ;
+  
+}
+textarea
+{
+    max-width: 100%;
+}
+img{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    max-width: 100px;
+    max-height:100px;
+}
+
+input 
+{
+    width: 100%;
+    height:30%; 
+    margin-bottom: 5%;;
+}
+input[type=submit]
+{
+    display: block;
+    text-align: center;
+}
+
+.button
+{
+    display:grid;
+    grid-auto-flow: column;
+    column-gap: 15%;
+    height: 70%;
+    width: 300px;
+    margin: auto;
+}
+/* Start Border*/
+
+.border
+{
+text-align: center;
+padding: 50%;
+
+}
+.border p
+{
+border: solid 2px wheat;
+height: 400px;
+}
+
+
+/*End Border*/
+
+.signup input
+{
+    margin: 1% auto;
+    height: 35px;
+}
