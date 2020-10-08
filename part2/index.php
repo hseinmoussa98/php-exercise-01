@@ -9,26 +9,6 @@
 </head>
  
 <body>
-  <div id="container">
-    <form method="post" action="" id="contactform">
-      <div >
-        <label for="salary">Salary:</label>
-        <input type="number"  placeholder="Enter your salary in USD"  name="salary" id="salary"><br/>
-      </div>
-      <div >
-        <input type="radio" name="radiotype" class="radiotype" value="Yearly"> Yearly
-        <input type="radio" name="radiotype" class="radiotype" value="Monthly" > Monthly<br/>
-      </div>
-      <div >
-        <label for="free">Tax Free Allowance:</label>
-        <input type="number" id="free" placeholder="Enter Tax Free Allowance in USD" name='free' ><br/>
-      </div>
-      <input type="submit" class="btn" value="Submit">
-    </form>
- 
-  
-  </div>
-</body>
 <?php
 
     
@@ -107,10 +87,32 @@
         echo "<th>".$final_salary_per_year/12 ."</th></tr>";
         echo"</table>";
         echo"</div>";
-
+        exit;
         }
     
 ?>
+  <div id="container">
+    <form method="post" action="" id="contactform">
+      <div >
+        <label for="salary">Salary:</label>
+        <input type="number"  placeholder="Enter your salary in USD"  name="salary" id="salary"><br/>
+      </div>
+      <div >
+        <input type="radio" name="radiotype" class="radiotype" value="Yearly"> Yearly
+        <input type="radio" name="radiotype" class="radiotype" value="Monthly" > Monthly<br/>
+      </div>
+      <div >
+        <label for="free">Tax Free Allowance:</label>
+        <input type="number" id="free" placeholder="Enter Tax Free Allowance in USD" name='free' ><br/>
+      </div>
+      <input type="submit" class="btn" value="Submit">
+    </form>
+    <div id="ajax_id"></div>
+ 
+  
+  </div>
+</body>
+
 <script>
   $(document).ready(function () {
     $('.btn').click(function (e) {
@@ -124,8 +126,8 @@
           url: "index.php",
           data: { "free": free, "radiotype": radiotype, "salary": salary },
           success: function (data) {
-            $('#container').html(data);
-            alert("AJAX Success");
+            $('#ajax_id').html(data);
+           
           }
         });
     });
