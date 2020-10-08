@@ -1,0 +1,58 @@
+body{
+    background-image: url('background.jpg');
+}
+*
+{
+    font-size: 1.04em;
+}
+#container
+{
+ text-align: center;
+ padding: auto;
+}
+
+.formclass
+{
+    border: solid 5px white;
+    width: 45%;
+    margin: auto;
+    margin-top: 1%;
+    
+}
+.formclass div
+{
+    margin: 3% auto;
+
+}
+
+input[type="number"]
+{
+    min-height: 25px;
+    margin-top: 5%;
+}
+label ,span,th,tr,td,h1
+{color: white; }
+table{
+    border-collapse: collapse; 
+    border-collapse:separate; 
+    border-spacing:10px 1px ; 
+}
+th { 
+   
+    Color:white; 
+} 
+th, td { 
+    width:150px; 
+    text-align:center; 
+    padding:5px 
+  
+} 
+.rad{padding-right:5%;
+display: inline;
+}
+div label { font-size: 120%; font-weight: bold;}
+h1{
+    font-size: 200%;
+}
+label
+{display: block;}
