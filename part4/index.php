@@ -12,4 +12,13 @@ foreach ($arr as $key => $value)
         echo "----> $key1 = $value1 <br>";
     
 }
+krsort($arr);
+echo '<br> Sorted:<br><br>';
+foreach ($arr as $key => $value) 
+{   echo strtoupper($key) . "<br>";
+    //krsort($value);
+    foreach ($value as $key1 => $value1)
+        echo "----> $key1 = $value1 <br>";
+    
+}
 ?>
