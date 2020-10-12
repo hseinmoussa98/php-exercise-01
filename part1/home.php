@@ -192,7 +192,7 @@ if(isset($_POST["sub2"]) && $_SERVER["REQUEST_METHOD"] == "POST" )
             </div>
             <img src="icon.svg" >
 
-            <form class="login-form " action="" method="POST" >
+            <form class="login-form log" action="" method="POST" >
                 <input id="inputform1" type="text" placeholder="Type Username Here" name="username" required="required">
                 <input type="password"name="pass" placeholder="Enter your pass" required="required" >
                 <input type ="submit" name="sub">
@@ -257,10 +257,18 @@ if(isset($_POST["sub2"]) && $_SERVER["REQUEST_METHOD"] == "POST" )
         
     }
     function funct2()
-    {
+    {   document.getElementsByClassName("signup")[0].style.display = "block";
+      if(screen.width>600)
+      {console.log(screen.width);
         document.getElementsByClassName("login")[0].style.visibility = "hidden";
         document.getElementsByClassName("border")[0].style.visibility = "hidden";
-        document.getElementsByClassName("signup")[0].style.display = "block";
+      }
+      else{
+      document.getElementsByClassName("login")[0].style.display = "none";
+      document.getElementsByClassName("border")[0].style.display = "none";
+      }
+        
+        
     }
     </script>
 </html>
