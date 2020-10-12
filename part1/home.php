@@ -17,7 +17,7 @@ session_start();
 </head>
 <body>
 <?php
-require("connect.php");
+//require("connect.php");
 $nameErr = $emailErr = $pass1Err = $pass2Err = $userErr=$phoneErr=$birthErr=$socialErr="";
 $name = $email = $pass1 = $pass2 = $user=$phone=$birth=$social="";
 
@@ -192,7 +192,7 @@ if(isset($_POST["sub2"]) && $_SERVER["REQUEST_METHOD"] == "POST" )
             </div>
             <img src="icon.svg" >
 
-            <form class="login-form" action="" method="POST" >
+            <form class="login-form " action="" method="POST" >
                 <input id="inputform1" type="text" placeholder="Type Username Here" name="username" required="required">
                 <input type="password"name="pass" placeholder="Enter your pass" required="required" >
                 <input type ="submit" name="sub">
